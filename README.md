@@ -15,11 +15,11 @@ Text Sentiment Analyzer is a Python application with a purpose of analyzing the 
 ## Dependencies 📌
 
 This code requires the following libraries:
-• pandas
-• numpy
-• matplotlib
-• seaborn
-• textblob
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- textblob
 
 The code begins by reading a dataset from a CSV file and selecting the relevant columns. It then extracts all the reviews for the product and calculates some basic statistics about the data, such as the number of columns and rows, and the length of the shortest review. The code uses lambda functions to apply the sentiment analyzer to each review in the dataset, in particular, the line productDF['review_polarity'] = productDF['review_text'].apply(lambda x: TextBlob(x).sentiment.polarity) uses a lambda function to calculate the polarity of each review in the review_text column. The lambda function takes in a review text as input, and returns the polarity of the text as calculated by the TextBlob library's sentiment.polarity attribute.
 
